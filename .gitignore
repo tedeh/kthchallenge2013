@@ -5,3 +5,4 @@ problems.pdf
 **/*.hi
 **/*.o
 **/solution
+**/*.sol
