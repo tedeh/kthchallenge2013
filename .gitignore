@@ -2,3 +2,6 @@ package
 problems.pdf
 .*
 !.gitignore
+**/*.hi
+**/*.o
+**/solution
