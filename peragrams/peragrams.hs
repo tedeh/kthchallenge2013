@@ -9,7 +9,7 @@ solution a =
   let counts = char_counts a
       unevens = filter (odd . snd) counts
       result = (length unevens) - 1
-   in if result < 0 then 0 else result
+   in max 0 result
 
 char_counts :: String -> [(Char, Int)]
 char_counts [] = []
