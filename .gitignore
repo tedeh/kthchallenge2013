@@ -6,3 +6,4 @@ problems.pdf
 **/*.o
 **/solution
 **/*.sol
+solutions*
