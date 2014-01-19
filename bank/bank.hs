@@ -27,7 +27,7 @@ solve t q = let line = map (\n -> filter (\m -> (snd m) == n) q) [0..t]
 
 solveIterate :: Money -> [Queue] -> Queue -> Money
 solveIterate m [] _ = m
-solveIterate m ([]:line) q = solveIterate m line q
+solveIterate m ([]:line) [] = solveIterate m line []
 solveIterate m (c:line) q = let qs = (c ++ q)
                                 max = maximumBy (\x y -> compare (fst x) (fst y)) qs
                                 qn = delete max qs
